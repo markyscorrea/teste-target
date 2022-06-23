@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Target</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body class="bg-secondary">
+
+    <nav id="topo" class="navbar navbar-expand-lg text-light opacity-75">
+        <div class="container-fluid d-flex justify-content-center">
+            <a class="nav-link active fs-4" aria-current="page" href="#topo">Target Sistemas - Teste</a>
+        </div>
+    </nav>
+
+    <section class="container mt-3">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-6">
+                <p class="fs-2 text-center text-light opacity-75">Selecione qual resposta deseja visualizar:</p>
+                <ul class="list-group">
+                    <li class="list-group-item text-center">
+                        <a class="nav-link" href="#fibonacci">1 - Cálculo Fibonacci</a>
+                    </li>
+                    <li class="list-group-item text-center">
+                        <a class="nav-link" href="#fat-mensal">2 - Faturamento Maior e Menor</a>
+                    </li>
+                    <li class="list-group-item text-center">
+                        <a class="nav-link" href="#dist">3 - Faturamento Mensal em %</a>
+                    </li>
+                    <li class="list-group-item text-center">
+                        <a class="nav-link" href="#string">4 - Inverter String</a>
+                    </li>
+                </ul>
+                <hr>
+            </div>
+        </div>
+    </section>
+ 
+    <section id="fibonacci" class=container>
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-6">
+                <p class="text-center fs-3 text-light opacity-75">1 - Cálculo Fibonacci</p>
+                <div class="input-group">
+                    <input id="valueFb" type="text" class="form-control" placeholder="Digite um número aqui..." aria-label="Username" aria-describedby="basic-addon1">
+                    <br>
+                    <button id='btnFb' class="input-group-text" id="basic-addon1">Verificar</button>
+                </div>
+                <span>
+                    <p class="text-light mt-3">
+                        Pertence a sequência Fibonacci: <span id="resultFb"></span>
+                    </p>
+                </span>
+                <hr>
+            </div>
+        </div>
+    </section>
+
+    <section id="fat-mensal" class=container>
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-6">
+                <p class="text-center fs-3 text-light opacity-75">2 - Faturamento Maior e Menor</p>
+                <ul class="list-group">
+                    <li id="item1" class="list-group-item"></li>
+                    <li id="item2" class="list-group-item"></li>
+                    <li id="item3" class="list-group-item"></li>
+                    <li id="item4" class="list-group-item"></li>
+                </ul>
+                <hr>
+            </div>
+        </div>
+    </section>
+
+    <section id="dist" class=container>
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-6">
+                <p class="text-center fs-3 text-light opacity-75">3 - Faturamento Mensal em %</p>
+                <ul class="list-group">
+                    <li id="itemDist1" class="list-group-item text-center"></li>
+                    <li id="itemDist2" class="list-group-item text-center"></li>
+                    <li id="itemDist3" class="list-group-item text-center"></li>
+                    <li id="itemDist4" class="list-group-item text-center"></li>
+                    <li id="itemDist5" class="list-group-item text-center"></li>
+                    <li id="itemDist6" class="list-group-item text-center"></li>
+                </ul>
+                <hr>
+            </div>
+        </div>
+    </section>
+
+    <section id="string" class=container>
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-6">
+                <p class="text-center fs-3 text-light opacity-75">4 - Inverter String</p>
+                <div class="input-group">
+                    <input id="valueStr" type="text" class="form-control" placeholder="Digite uma palavra aqui..." aria-label="Username" aria-describedby="basic-addon1">
+                    <br>
+                    <button id='btnStr' class="input-group-text" id="basic-addon1">Inverter</button>
+                </div>
+                <span>
+                    <p class="text-light mt-3">
+                        Resultado: <span id="resultStr"></span>
+                    </p>
+                </span>
+                <hr>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-light text-center">
+        <p>Create by Márkys Corrêa &copy;</p>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="./js/fb.js"></script>
+    <script type="module" src="./js/fat-mensal.js"></script>
+    <script src="./js/string.js"></script>
+    <script src="./js/dist.js"></script>
+</body>
+</html>
