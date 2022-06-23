@@ -12,6 +12,6 @@ let btnStr = document.getElementById('btnStr')
 btnStr.addEventListener('click', () => {
     let valueStr = document.getElementById('valueStr')
     let result = inverterString(valueStr.value)
-    document.getElementById('resultStr').innerHTML = result
+    document.getElementById('resultStr').innerHTML = `<strong> ${result} </strong>`
     valueStr.value = ''
 })
